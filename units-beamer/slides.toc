@@ -1,0 +1,15 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\beamer@sectionintoc {1}{Introduzione}{3}{0}{1}
+\beamer@sectionintoc {2}{Modello matematico}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Piattaforma di Gough-Stewart}{8}{0}{2}
+\beamer@sectionintoc {3}{Realizzazione pratica}{10}{0}{3}
+\beamer@sectionintoc {4}{Installation}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Required Packages}{19}{0}{4}
+\beamer@sectionintoc {5}{User Interface}{20}{0}{5}
+\beamer@subsectionintoc {5}{1}{Loading the Theme and Theme Options}{21}{0}{5}
+\beamer@subsectionintoc {5}{2}{Modifying the theme}{23}{0}{5}
+\beamer@subsectionintoc {5}{3}{Frames}{29}{0}{5}
+\beamer@subsectionintoc {5}{4}{Math and blocks}{31}{0}{5}
+\beamer@subsectionintoc {5}{5}{Standout frames}{33}{0}{5}
+\beamer@subsectionintoc {5}{6}{Widescreen Support}{36}{0}{5}

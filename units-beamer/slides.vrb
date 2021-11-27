@@ -1,0 +1,12 @@
+\frametitle{Standout frames}\framesubtitle {}
+	The UniNA beamer theme supports standout frames. For example, the following
+	\begin{verbatim}
+\begin{frame}[plain,noframenumbering]
+	\standoutpage{This is a dark standout frame!}
+\ end{frame}
+
+\begin{frame}[plain,noframenumbering]
+	\standoutpagelight{This is a light standout frame!}
+\ end{frame}
+	\end{verbatim}
+	produces the following two slides.
