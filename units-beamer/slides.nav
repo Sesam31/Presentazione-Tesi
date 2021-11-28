@@ -4,95 +4,77 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Introduzione}{3}{Introduzione}{0}}
+\headcommand {\sectionentry {1}{Obiettivi del progetto}{3}{Obiettivi del progetto}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
-\headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
-\headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{0}{4}{6/6}{}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {3}{6}}
-\headcommand {\beamer@subsectionpages {3}{6}}
-\headcommand {\sectionentry {2}{Modello matematico}{7}{Modello matematico}{0}}
-\headcommand {\slideentry {2}{0}{1}{7/7}{}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{Piattaforma di Gough-Stewart}}
-\headcommand {\slideentry {2}{1}{1}{8/8}{Piattaforma di Gough-Stewart}{0}}
+\headcommand {\slideentry {1}{0}{2}{4/7}{}{0}}
+\headcommand {\beamer@framepages {4}{7}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {3}{7}}
+\headcommand {\sectionentry {2}{Introduzione}{8}{Introduzione}{0}}
+\headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{1}{2}{9/9}{Piattaforma di Gough-Stewart}{0}}
+\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{Piattaforma di Gough-Stewart}}
+\headcommand {\slideentry {2}{1}{1}{9/9}{Piattaforma di Gough-Stewart}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {7}{9}}
-\headcommand {\beamer@subsectionpages {8}{9}}
-\headcommand {\sectionentry {3}{Realizzazione pratica}{10}{Realizzazione pratica}{0}}
-\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{10}{Tecnologie impiegate}}
+\headcommand {\slideentry {2}{2}{1}{10/10}{Tecnologie impiegate}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
+\headcommand {\slideentry {2}{2}{2}{11/11}{Tecnologie impiegate}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{0}{3}{12/12}{}{0}}
+\headcommand {\beamer@sectionpages {8}{11}}
+\headcommand {\beamer@subsectionpages {10}{11}}
+\headcommand {\sectionentry {3}{Modellizzazione matematica}{12}{Modellizzazione matematica}{0}}
+\headcommand {\slideentry {3}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{0}{4}{13/13}{}{0}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{13}{Piattaforma di Gough-Stewart}}
+\headcommand {\slideentry {3}{1}{1}{13/13}{Piattaforma di Gough-Stewart}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{0}{5}{14/14}{}{0}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{14}{Controllore PID}}
+\headcommand {\slideentry {3}{2}{1}{14/14}{Controllore PID}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@sectionpages {10}{14}}
-\headcommand {\beamer@subsectionpages {10}{14}}
-\headcommand {\sectionentry {4}{Installation}{15}{Installation}{0}}
-\headcommand {\slideentry {4}{0}{1}{15/15}{}{0}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{15}{Piano inclinato}}
+\headcommand {\slideentry {3}{3}{1}{15/15}{Piano inclinato}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {4}{0}{2}{16/17}{}{0}}
-\headcommand {\beamer@framepages {16}{17}}
-\headcommand {\slideentry {4}{0}{3}{18/18}{}{0}}
+\headcommand {\beamer@sectionpages {12}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\sectionentry {4}{Realizzazione pratica}{16}{Realizzazione pratica}{0}}
+\headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{17}{Assemblaggio}}
+\headcommand {\slideentry {4}{1}{1}{17/17}{Assemblaggio}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{18}{Programmazione}}
+\headcommand {\slideentry {4}{2}{1}{18/18}{Programmazione}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@subsectionpages {15}{18}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{19}{Required Packages}}
-\headcommand {\slideentry {4}{1}{1}{19/19}{Required Packages}{0}}
+\headcommand {\beamer@sectionpages {16}{18}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\sectionentry {5}{Risultati}{19}{Risultati}{0}}
+\headcommand {\slideentry {5}{0}{1}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@sectionpages {15}{19}}
 \headcommand {\beamer@subsectionpages {19}{19}}
-\headcommand {\sectionentry {5}{User Interface}{20}{User Interface}{0}}
-\headcommand {\slideentry {5}{0}{1}{20/20}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{20}{Dimostrazione 6 gradi di libertà}}
+\headcommand {\slideentry {5}{1}{1}{20/20}{Dimostrazione 6 gradi di libertà}{0}}
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\beamer@subsectionpages {20}{20}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{21}{Loading the Theme and Theme Options}}
-\headcommand {\slideentry {5}{1}{1}{21/21}{Loading the Theme and Theme Options}{0}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{21}{Dimostrazione stabilizzazione}}
+\headcommand {\slideentry {5}{2}{1}{21/21}{Dimostrazione stabilizzazione}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {5}{1}{2}{22/22}{Loading the Theme and Theme Options}{0}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{22}{Dimostrazione setpoint dinamico}}
+\headcommand {\slideentry {5}{3}{1}{22/22}{Dimostrazione setpoint dinamico}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsectionpages {21}{22}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{23}{Modifying the theme}}
-\headcommand {\slideentry {5}{2}{1}{23/24}{Modifying the theme}{0}}
-\headcommand {\beamer@framepages {23}{24}}
-\headcommand {\slideentry {5}{2}{2}{25/28}{Modifying the theme}{0}}
-\headcommand {\beamer@framepages {25}{28}}
-\headcommand {\beamer@subsectionpages {23}{28}}
-\headcommand {\beamer@subsectionentry {0}{5}{3}{29}{Frames}}
-\headcommand {\slideentry {5}{3}{1}{29/29}{Frames}{0}}
-\headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {5}{3}{2}{30/30}{Frames}{0}}
-\headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\beamer@subsectionentry {0}{5}{4}{31}{Math and blocks}}
-\headcommand {\slideentry {5}{4}{1}{31/32}{Math and blocks}{0}}
-\headcommand {\beamer@framepages {31}{32}}
-\headcommand {\beamer@subsectionpages {31}{32}}
-\headcommand {\beamer@subsectionentry {0}{5}{5}{33}{Standout frames}}
-\headcommand {\slideentry {5}{5}{1}{33/33}{Standout frames}{0}}
-\headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {5}{5}{2}{34/34}{Standout frames}{0}}
-\headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {5}{5}{3}{35/35}{Standout frames}{0}}
-\headcommand {\beamer@framepages {35}{35}}
-\headcommand {\beamer@subsectionpages {33}{35}}
-\headcommand {\beamer@subsectionentry {0}{5}{6}{36}{Widescreen Support}}
-\headcommand {\slideentry {5}{6}{1}{36/36}{Widescreen Support}{0}}
-\headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {5}{6}{2}{37/37}{Widescreen Support}{0}}
-\headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@partpages {1}{37}}
-\headcommand {\beamer@subsectionpages {36}{37}}
-\headcommand {\beamer@sectionpages {20}{37}}
-\headcommand {\beamer@documentpages {37}}
-\headcommand {\gdef \inserttotalframenumber {20}}
+\headcommand {\slideentry {5}{3}{2}{23/23}{Dimostrazione setpoint dinamico}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@partpages {1}{23}}
+\headcommand {\beamer@subsectionpages {22}{23}}
+\headcommand {\beamer@sectionpages {19}{23}}
+\headcommand {\beamer@documentpages {23}}
+\headcommand {\gdef \inserttotalframenumber {13}}

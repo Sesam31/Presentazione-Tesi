@@ -1,15 +1,17 @@
-\babel@toc {italian}{}
-\babel@toc {italian}{}
-\beamer@sectionintoc {1}{Introduzione}{3}{0}{1}
-\beamer@sectionintoc {2}{Modello matematico}{7}{0}{2}
-\beamer@subsectionintoc {2}{1}{Piattaforma di Gough-Stewart}{8}{0}{2}
-\beamer@sectionintoc {3}{Realizzazione pratica}{10}{0}{3}
-\beamer@sectionintoc {4}{Installation}{15}{0}{4}
-\beamer@subsectionintoc {4}{1}{Required Packages}{19}{0}{4}
-\beamer@sectionintoc {5}{User Interface}{20}{0}{5}
-\beamer@subsectionintoc {5}{1}{Loading the Theme and Theme Options}{21}{0}{5}
-\beamer@subsectionintoc {5}{2}{Modifying the theme}{23}{0}{5}
-\beamer@subsectionintoc {5}{3}{Frames}{29}{0}{5}
-\beamer@subsectionintoc {5}{4}{Math and blocks}{31}{0}{5}
-\beamer@subsectionintoc {5}{5}{Standout frames}{33}{0}{5}
-\beamer@subsectionintoc {5}{6}{Widescreen Support}{36}{0}{5}
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\beamer@sectionintoc {1}{Obiettivi del progetto}{3}{0}{1}
+\beamer@sectionintoc {2}{Introduzione}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Piattaforma di Gough-Stewart}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Tecnologie impiegate}{10}{0}{2}
+\beamer@sectionintoc {3}{Modellizzazione matematica}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Piattaforma di Gough-Stewart}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{Controllore PID}{14}{0}{3}
+\beamer@subsectionintoc {3}{3}{Piano inclinato}{15}{0}{3}
+\beamer@sectionintoc {4}{Realizzazione pratica}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{Assemblaggio}{17}{0}{4}
+\beamer@subsectionintoc {4}{2}{Programmazione}{18}{0}{4}
+\beamer@sectionintoc {5}{Risultati}{19}{0}{5}
+\beamer@subsectionintoc {5}{1}{Dimostrazione 6 gradi di libertà}{20}{0}{5}
+\beamer@subsectionintoc {5}{2}{Dimostrazione stabilizzazione}{21}{0}{5}
+\beamer@subsectionintoc {5}{3}{Dimostrazione setpoint dinamico}{22}{0}{5}

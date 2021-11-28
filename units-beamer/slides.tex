@@ -15,6 +15,7 @@
 	\usepackage[T1]{fontenc}
 	\usepackage{tikz}
 	\usepackage{multimedia}
+	\usepackage{tabulary}
 
 	\usepackage[scaled]{beramono}     %mono?
 	\usepackage[scale=1.15]{AlegreyaSans}
@@ -53,27 +54,42 @@
 		\tableofcontents
 	\end{frame}
 
+
+	\section{Obiettivi del progetto}
+	\begin{frame}{Obiettivi del progetto}
+	\begin{enumerate}[<+->]
+		\item Realizzare una piattaforma di Gough-Stewart con piano resistivo
+		\item Implementare il controllore PID
+		\item Stabilizzare la pallina su diversi punti piano
+		\item Eseguire un controllo dinamico tracciando le figure di Lissajous
+	\end{enumerate}
+
+	\end{frame}
+
+
 	\section{Introduzione}
+	\subsection{Piattaforma di Gough-Stewart}
 	% motivation for creating this theme
 	\begin{frame}{Introduzione}{Piattaforma di Gough-Stewart}
-		%\begin{block}{Why the UniNA beamer theme?}
 
 	\begin{columns}
-	\column{0.3\textwidth}
+	\column{0.5\textwidth}
 	%Stabilizzazione di una pallina su un piano mediante l'uso di una piattaforma di Gough-Stewart.
 	
 	\begin{itemize}
 		\item Robot parallelo
 		\item Esapode
 		\item 6 gradi di libertà
-		\item Attuatori rotativi
+		\item Largo impiego industriale
+		\item Utilizzo attuatori rotativi
 	\end{itemize}
-	\column{0.7\textwidth}
-	\centering \includegraphics[width=\textwidth]{./images/stewart.png}
+	\column{0.5\textwidth}
+	\centering \includegraphics[width=\textwidth]{./images/gough.png}
 	\end{columns}
 		%\end{block}
 	\end{frame}
 	
+	\subsection{Tecnologie impiegate}
 	\begin{frame}{Introduzione}{Tecnologie impiegate}
 		%\begin{block}{Why the UniNA beamer theme?}
 
@@ -88,7 +104,21 @@
 		\item Ponte ad H
 	\end{itemize}
 	\column{0.7\textwidth}
-	\centering \includegraphics[width=\textwidth]{./images/stewart.png}
+	\begin{tabular}{cc}
+	\hspace{0.5cm}
+  \includegraphics[height=0.3\textheight]{images/1.jpg}
+  &
+  \hspace{0.3cm}
+  \includegraphics[height=0.3\textheight]{images/2.jpg}
+ \end{tabular}
+
+\begin{tabulary}{\linewidth}{CC}
+  \includegraphics[height=0.3\textheight]{images/3.jpg}
+  &
+  \hspace{0cm}
+  \includegraphics[height=0.3\textheight]{images/4.jpg}
+ \end{tabulary}
+
 	\end{columns}
 		%\end{block}
 	\end{frame}
@@ -96,16 +126,16 @@
 	\begin{frame}{Introduzione}{Realizzazione ponte ad H}
 
 	\begin{columns}
-	\column{0.3\textwidth}
+	\column{0.4\textwidth}
 	%Stabilizzazione di una pallina su un piano mediante l'uso di una piattaforma di Gough-Stewart.
 	
 	\begin{itemize}
-		\item Arduino
-		\item Servomotori
-		\item Piano resistivo
-		\item Ponte ad H
+		\item Pilotare piano resistivo
+		\item MOSFET
+		\item Gradiente di tensione alternato sugli assi $x$ e $y$
+		\item Misurare e limitare lo shoot-through
 	\end{itemize}
-	\column{0.7\textwidth}
+	\column{0.6\textwidth}
 	\centering
 	\includegraphics[width=\textwidth]{./images/circuit3.png}
 	\end{columns}
@@ -113,16 +143,16 @@
 	\end{frame}
 	
 	
-	\section{Modello matematico}
+	\section{Modellizzazione matematica}
 	\subsection{Piattaforma di Gough-Stewart}
-	\begin{frame}{Modello matematico}{Piattaforma di Gough-Stewart}
+	\begin{frame}{Modellizzazione matematica}{Piattaforma di Gough-Stewart}
 
 	\begin{columns}
 	\column{0.4\textwidth}
 	%Stabilizzazione di una pallina su un piano mediante l'uso di una piattaforma di Gough-Stewart.
 	
 	\begin{itemize}
-		\item Analisi vettoriale
+		\item Descrizione vettoriale
 		\item Problema attuatori rotativi
 		\item Angoli per raggiungere una posizione nello spazio
 	\end{itemize}
@@ -156,13 +186,142 @@
 		%\end{block}
 	\end{frame}
 	
-	\begin{frame}{Modello matematico}{Piano inclinato e controllore PID}
+	
+	
+	\subsection{Controllore PID}
+	\begin{frame}{Modellizzazione matematica}{Controllore PID}
 
 	\begin{itemize}
+		\item PID teorico
+		\item Miglioramenti pratici impiegati
+		\item Taratura euristica
+	\end{itemize}
+	\vspace{0.5cm}
+	\centering
+\scalebox{0.6}{
+\begin{tikzpicture}[font=\small,thick]
+ 
+% Start block
+\node[draw,
+    circle,
+    minimum width=1cm,
+     text centered] (block1) {$\Sigma$};
+    
+    % Power and voltage variation
+\node[draw,
+    right=of block1,
+    minimum width=1cm,
+    minimum height=1cm, xshift= 1cm
+] (block2) {$K_i$};
+
+\node[draw,
+    right=of block2,
+    minimum width=1cm,
+    minimum height=1cm,
+     text centered
+] (int) {$\Sigma_{t_k}$};
+
+\node[draw, right=of int,
+    minimum width=1cm,
+    minimum height=1cm,
+     text centered
+] (filter4) {$\Lambda$};
+
+
+\node[draw, right=of int, 
+    circle,
+    minimum width=1cm, xshift=2cm,
+     text centered] (S) {$\Sigma$};
+    
+\node[draw, right=of S,
+    minimum width=1cm,
+    minimum height=1cm,
+     text centered
+] (filter3) {$\Lambda$};
+
+\node[draw,
+    right=of filter3,
+    minimum width=2cm,
+    minimum height=1cm,
+    text width=2cm, text centered
+] (block3) {Piattaforma Stewart};
+
+\node[draw,
+    right=of block3,
+    minimum width=2cm,
+    minimum height=1cm,
+    text width=2cm, text centered
+] (block4) {Piano resistivo};
+ 
+\node[draw,
+    above=of block2,
+    minimum width=1cm,
+    minimum height=1cm,yshift=-0.5cm
+] (P) {$K_p$};
+
+\node[draw,
+    below=of block2,
+    minimum width=1cm,
+    minimum height=1cm,yshift=0.5cm
+] (D) {$K_d$};
+
+\node[draw,
+    right=of D,
+    minimum width=1cm,
+    minimum height=1cm,
+     text centered
+] (der) {$\Delta_{t_k}$};
+
+\node[draw,
+    right=of der,
+    minimum width=1cm,
+    minimum height=1cm,
+     text centered
+] (filter1) {$\Phi$};
+
+\node[draw,
+    minimum width=1cm,
+    minimum height=1cm,
+     text centered, xshift=19cm, yshift=-1.5cm
+] (filter2) {$\Phi$};
+
+
+
+% Arrows
+\draw [-latex] (-2cm,0cm) -- node[anchor=south]{$x[k]$}(block1)node[xshift=-0.75cm,yshift=-0.25cm]{$+$}node[xshift=0.25cm,yshift=-0.75cm]{$-$};
+\draw [-latex] (block1) edge (block2)node[anchor=south, xshift=1cm]{$e[k]$};
+\draw [-latex](1.5,-3) |- (D);
+\draw [-latex](1.5,0) |- (P);
+\draw [-latex](D) edge (der);
+\draw [-latex](block2) edge (int);
+\draw [-latex](D) edge (der);
+%\draw [-latex](int) -- (S)node[anchor=south, xshift= 1cm]{$c[k]$};
+\draw [-latex](P) -| (S)node[xshift=0.25cm,yshift=0.75cm]{$+$}node[xshift=-0.75cm,yshift=0.25cm]{$+$}node[xshift=-0.25cm,yshift=-0.75cm]{$+$};
+\draw [-latex]	(filter1) -| (S);
+\draw [-latex]	(filter4) -- (S);
+\draw [-latex]	(int) -- (filter4);
+\draw [-latex]	(der) -- (filter1);
+\draw [-latex]	(S) edge (filter3);	
+\draw [-latex]	(filter3) edge (block3);	
+\draw [-latex]	(block3) edge (block4);
+\draw [-latex]	(block4) -- (20,0);	
+\draw 	(19,0)node[anchor=south]{$u[k]$} -- (filter2);
+\draw (filter2) -- (19,-3);		  
+\draw [-latex]	(19,-3) -| (block1);	
+\end{tikzpicture}
+}
+		%\end{block}
+	\end{frame}	
+	
+	
+	
+	\subsection{Piano inclinato}
+	\begin{frame}{Modellizzazione matematica}{Piano inclinato}
+
+	\begin{itemize}
+		\item Modello fisico
 		\item Funzione di trasferimento piano inclinato
-		\item Controllore PID
-		\item Analisi di stabilità
-		\item Miglioramenti impiegati
+		\item Analisi di stabilità impiegando controllore PID
 	\end{itemize}
 	\centering
 \scalebox{1}{
@@ -189,6 +348,7 @@
 	\end{frame}
 	
 	\section{Realizzazione pratica}
+	\subsection{Assemblaggio}
 	\begin{frame}{Realizzazione Pratica}{Assemblaggio}
 
 	\begin{columns}
@@ -207,23 +367,42 @@
 		%\end{block}
 	\end{frame}
 	
+	\subsection{Programmazione}
 	\begin{frame}{Realizzazione Pratica}{Programmazione}
-
-	
+	\begin{columns}
+	\column{0.5\textwidth}
 	\begin{itemize}
+	
 		\item Controllo semplice e intuitivo:\\ 
-		\texttt{setPosition(x, y, z, rol, pit, yaw);}
+		\small \texttt{setPosition(x, y, z, rol, pit, yaw);}
 		\item Controllo raggiungibilità posizione
-		\item Implementazione controllore PID: 	\\
-		\texttt{setPosition(0,0,108,radians(tiltX),radians(tiltY),radians(0));}
-		\item Filtraggio dati
-		\item Analisi all'oscilloscopio
+		%\item Implementazione controllore PID: 	\\\texttt{setPosition(0,0,108,radians(tiltX),radians(tiltY),radians(0));}
+		
+		\item Filtraggio dati con media e filtro passa basso
+		\item Analisi della temporizzazione all'oscilloscopio
 		\item Programmazione figure di Lissajous
 	\end{itemize}
+	\column{0.5\textwidth}
+	\centering \includegraphics[width=0.65\textwidth]{./images/filtraggio2.png}\\
+	\vspace{0.3cm}
+	\centering \includegraphics[width=0.65\textwidth]{./images/osc2.jpg}
+	\end{columns}
+	\end{frame}
+	
+	\section{Risultati}
+	
+	\subsection{Dimostrazione 6 gradi di libertà}
+	\begin{frame}{Risultati}{Dimostrazione 6 gradi di libertà}
+	\centering\movie[width=12cm, height=6.75cm, poster, autostart, repeat]{}{./images/test.mp4}
+	\end{frame}
+	\subsection{Dimostrazione stabilizzazione}
+	\begin{frame}{Risultati}{Dimostrazione stabilizzazione}
+	\centering\movie[width=12cm, height=6.75cm, poster, autostart, repeat]{}{./images/test.mp4}
 
 	\end{frame}
 	
-	\begin{frame}{Realizzazione Pratica}{Programmazione}
+	\subsection{Dimostrazione setpoint dinamico}
+	\begin{frame}{Risultati}{Dimostrazione setpoint dinamico}
 	\centering\movie[width=12cm, height=6.75cm, poster, autostart, repeat]{}{./images/test.mp4}
 
 	\end{frame}
@@ -231,194 +410,6 @@
 	\begin{frame}[plain,noframenumbering]
 	\standoutpage{\bfseries\huge Grazie per l'attenzione!}
 	\end{frame}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	\section{Installation}
-	\begin{frame}{Installation}
-	The theme consists of five files
-	\begin{enumerate}
-		\item {\tt beamerthemeUniNA.sty}
-		\item {\tt beamerinnerthemeUniNA.sty}
-		\item {\tt beamerouterthemeUniNA.sty}
-		\item {\tt beamercolorthemeUniNA.sty}
-		\item {\tt beamerfontthemeUniNA.sty}
-	\end{enumerate}
-	The theme can either be installed for local or global use.
-	\pause
-	\begin{block}{Local Installation}
-		The simplest way of installing the theme is by placing the five theme files in the same 
-		folder as your presentation.
-	\end{block}
-	\end{frame}
-
-	% general installation instructions
-	\begin{frame}{Installation}
-	\begin{block}{Global Installation}
-	\begin{itemize}
-		\item If you wish to make the theme globally available, you must put the files in your local LaTeX directory tree.
-		The location of the root of the local directory tree depends on the operating system and the LaTeX distribution.
-		\item Refer to your distribution's documentation for details.
-	\end{itemize}
-	\end{block}
-	\end{frame}
-
-\subsection{Required Packages}
-% list of required packages
-\begin{frame}{Installation}{Required Packages}
-  Of course, you have to have the Beamer class installed. In addition, the theme loads the following packages:
-  \begin{itemize}
-	\item TikZ\footnote[frame]{By the way, TikZ is an awesome package for creating beautiful graphics, and this is a footnote.};
-    \item calc, fp, adjustbox, setspace, transparent.
-  \end{itemize}
-  These packages are very common and should therefore be included in your LaTeX distribution.
-\end{frame}
-%%%%%%%%%%%%%%%%
-
-\section{User Interface}
-\subsection{Loading the Theme and Theme Options}
-% list of the themes and options
-\begin{frame}{User Interface}{Loading the Theme and Theme Options}
-  \begin{block}{The Presentation Theme}
-    It is very simple to load the presentation theme. Just type\\
-    {\tt \textbackslash usetheme[<options>]\{UniNA\}}\\
-	which is exactly the same way other beamer presentation themes are loaded. 
-	The presentation theme loads the inner, outer, color and font UniNA theme files 
-	and passes the {\tt <options>} on to these files.
-  \end{block}
-\end{frame}
-%%%%%%%%%%%%%%%%
-
-% list of the themes and options
-\begin{frame}{User Interface}{Theme Options}
-  \begin{block}{Theme options}
-    The following options are available:
-  \begin{itemize}
-	\item {\tt rotationcw}: set the direction of the rotation of the progress circle 
-	to clockwise instead of counterclockwise.
-    \item {\tt sectionpages}: show section pages.
-    \item {\tt logo}: used to specify the path to the logo to use in the upper right corner.
-  \end{itemize}
-  \end{block}
-\end{frame}
-%%%%%%%%%%%%%%%%
-
-\subsection{Modifying the theme}
-% how to modify the theme
-{\setbeamercolor{UniNA}{fg=blue!50,bg=green!60}
- \setbeamercolor{structure}{fg=red}
- \setbeamercolor{frametitle}{use=structure,fg=structure.fg}
- \setbeamercolor{itemize/enumerate body}{fg=white, bg=red}
- \setbeamercolor{normal text}{fg=white}
- \setbeamercolor{alerted text}{fg=blue}
- \setbeamercolor{background canvas}{bg=purple!50}
-\begin{frame}[fragile]{User Interface}{Modifying the Theme}
-  \begin{itemize}[<+->]
-	\item You can modify specific elements of the theme through the 
-	templates provided by the beamer class. Please refer to the beamer user manual for instructions.
-    \item For example, on this rather bizarre-looking slide the following commands have been used:
-	\begin{verbatim}
-\setbeamercolor{UniNA}{fg=blue!50,bg=green!60}
-\setbeamercolor{structure}{fg=red}
-\setbeamercolor{frametitle}{use=structure,fg=structure.fg}
-\setbeamercolor{itemize/enumerate body}{fg=white, bg=red}
-\setbeamercolor{normal text}{fg=white}
-\setbeamercolor{alerted text}{fg=blue}
-\setbeamercolor{background canvas}{bg=purple!50}
-	\end{verbatim}
-  \end{itemize}
-\end{frame}
-}
-
-\begin{frame}{User Interface}{Modifying the Theme}
-	\begin{itemize}[<+->]
-		\item If you want to change the main colour and need a matching Federico II logo,
-		  	you can compile your own as follows:
-		  	\begin{enumerate}[<+->]
-				\item change the definition of \texttt{logocolor} in 
-					\texttt{logo/logo-federico-II.tex} accordingly to your needs;
-				\item compile \texttt{logo/logo-federico-II.tex} with \texttt{xelatex};
-			\end{enumerate}
-		\item With your version of the logo in place, you can change the value of the \texttt{logo}
-			parameter to the path of your own logo.
-	\end{itemize}
-\end{frame}
-
-\subsection{Frames}
-
-\begin{frame}[plain]{Plain frame}{Subtitle}
-	This is a frame with no header thanks to the \texttt{plain} option.
-\end{frame}
-
-\begin{frame}[noframenumbering]{Unnumbered frame}{Subtitle}
-	This is a frame not contributing to the frame count, thanks to the \texttt{noframenumbering} option.
-\end{frame}
-
-\subsection{Math and blocks}
-
-\begin{frame}{Math and blocks}{Test math and blocks}
-	The following text is \alert<2>{alerted} in the next slide. 
-	Now some math mode:
-	if $R=\{x\mid x\not\in x\}$, then $R\in R \Leftrightarrow R\not\in R$.
-	\begin{block}{Observation}
-	This is an observation.
-	\end{block}
-	\begin{exampleblock}{Example 14}
-	This is a nice example block.
-	\end{exampleblock}
-	\begin{alertblock}{Beware!}
-	Naive set theory is \emph{a wolf in sheep's clothing?}
-	\end{alertblock}
-\end{frame}
-
-\subsection{Standout frames}
-
-
-\begin{frame}[fragile]{Standout frames}{}
-	The UniNA beamer theme supports standout frames. For example, the following
-	\begin{verbatim}
-\begin{frame}[plain,noframenumbering]
-	\standoutpage{This is a dark standout frame!}
-\ end{frame}
-
-\begin{frame}[plain,noframenumbering]
-	\standoutpagelight{This is a light standout frame!}
-\ end{frame}
-	\end{verbatim}
-	produces the following two slides.
-\end{frame}
-
-\begin{frame}[plain,noframenumbering]
-	\standoutpage{This is a dark standout frame!}
-\end{frame}
-
-\begin{frame}[plain,noframenumbering]
-	\standoutpagelight{This is a light standout frame!}
-\end{frame}
-
-\subsection{Widescreen Support}
-% Widescreen Support
-\begin{frame}{User Interface}{Widescreen Support}
-\begin{block}{Widescreen Support}
-	Newer projectors and almost any modern TV support a widescreen format such as 16:10 or 16:9. Beamer (>= v. 3.10) supports various aspect ratios of the slides. According to section 8.3 on page 77 of the Beamer user guide v. 3.10, you can write\\
-{\tt\textbackslash documentclass[aspectratio=1610]\{beamer\}}\\
-to get slides with an aspect ratio of 16:10. You can also use 169, 149, 54, 43 (default), and 32 to get other aspect ratios.
-\end{block}
-\end{frame}
-
-%final slide
-\begin{frame}[plain,noframenumbering]
-	\standoutpage{\bfseries\huge Thank you for your time!}
-\end{frame}
 
 \end{document}
 		
