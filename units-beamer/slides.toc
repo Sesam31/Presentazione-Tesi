@@ -14,4 +14,4 @@
 \beamer@sectionintoc {5}{Risultati}{19}{0}{5}
 \beamer@subsectionintoc {5}{1}{Dimostrazione 6 gradi di libertà}{20}{0}{5}
 \beamer@subsectionintoc {5}{2}{Dimostrazione stabilizzazione}{21}{0}{5}
-\beamer@subsectionintoc {5}{3}{Dimostrazione setpoint dinamico}{22}{0}{5}
+\beamer@subsectionintoc {5}{3}{Dimostrazione setpoint dinamico con figure di Lissajous}{22}{0}{5}

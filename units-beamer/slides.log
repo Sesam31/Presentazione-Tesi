@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2021.10.21)  28 NOV 2021 20:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2021.10.21)  29 NOV 2021 12:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1611,85 +1611,107 @@ Package pdftex.def Info: _figures/logo-federico-II-blue.png  used on input line
 ( FP-UPN ( FP-MUL ) ( FP-DIV ) ) ) [17
 
  <./images/stewart.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 39
-0.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 38
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 390.
+(Font)              scaled to size 8.09995pt on input line 388.
 <./images/filtraggio2.png, id=224, 1658.195pt x 920.43875pt>
 File: ./images/filtraggio2.png Graphic file (type png)
 <use ./images/filtraggio2.png>
-Package pdftex.def Info: ./images/filtraggio2.png  used on input line 390.
-(pdftex.def)             Requested size: 129.45882pt x 71.85292pt.
-<./images/osc2.jpg, id=225, 2679.00874pt x 2007.5pt>
-File: ./images/osc2.jpg Graphic file (type jpg)
-<use ./images/osc2.jpg>
-Package pdftex.def Info: ./images/osc2.jpg  used on input line 390.
-(pdftex.def)             Requested size: 129.45882pt x 96.98073pt.
+Package pdftex.def Info: ./images/filtraggio2.png  used on input line 388.
+(pdftex.def)             Requested size: 199.1693pt x 110.54619pt.
 File: _figures/logo-federico-II-blue.png Graphic file (type png)
 <use _figures/logo-federico-II-blue.png>
 Package pdftex.def Info: _figures/logo-federico-II-blue.png  used on input line
- 390.
+ 388.
 (pdftex.def)             Requested size: 36.93582pt x 36.92833pt.
  ( FP-EVAL ( FP-UPN
 ( FP-MUL ) ( FP-DIV ) ) ) [18
 
- <./images/filtraggio2.png> <./images/osc2.jpg>]
+ <./images/filtraggio2.png>]
 File: _figures/logo-federico-II-blue.png Graphic file (type png)
 <use _figures/logo-federico-II-blue.png>
 Package pdftex.def Info: _figures/logo-federico-II-blue.png  used on input line
- 392.
+ 390.
 (pdftex.def)             Requested size: 298.11467pt x 298.11467pt.
-
-[19
-
-]
-File: _figures/logo-federico-II-blue.png Graphic file (type png)
-<use _figures/logo-federico-II-blue.png>
-Package pdftex.def Info: _figures/logo-federico-II-blue.png  used on input line
- 397.
-(pdftex.def)             Requested size: 36.93582pt x 36.92833pt.
- ( FP-EVAL ( FP-UPN ( FP-MUL ) ( FP-DIV ) ) ) [20
+ [19
 
 ]
 File: _figures/logo-federico-II-blue.png Graphic file (type png)
 <use _figures/logo-federico-II-blue.png>
 Package pdftex.def Info: _figures/logo-federico-II-blue.png  used on input line
- 402.
+ 395.
 (pdftex.def)             Requested size: 36.93582pt x 36.92833pt.
- ( FP-EVAL ( FP-UPN
-( FP-MUL ) ( FP-DIV ) ) ) [21
+ ( FP-EVAL
+( FP-UPN ( FP-MUL ) ( FP-DIV ) ) ) [20
 
 ]
 File: _figures/logo-federico-II-blue.png Graphic file (type png)
 <use _figures/logo-federico-II-blue.png>
 Package pdftex.def Info: _figures/logo-federico-II-blue.png  used on input line
- 408.
+ 400.
 (pdftex.def)             Requested size: 36.93582pt x 36.92833pt.
- ( FP-EVAL ( FP-UPN ( FP-MUL ) ( FP-DIV ) ) )
-[22
+ ( FP-EVAL ( FP-UPN ( FP-MUL ) ( FP-DIV
+) ) ) [21
 
 ]
+<images/rc.jpg, id=254, 919.435pt x 995.72pt>
+File: images/rc.jpg Graphic file (type jpg)
+<use images/rc.jpg>
+Package pdftex.def Info: images/rc.jpg  used on input line 420.
+(pdftex.def)             Requested size: 88.82031pt x 96.19353pt.
+<images/cc.jpg, id=255, 919.435pt x 995.72pt>
+File: images/cc.jpg Graphic file (type jpg)
+<use images/cc.jpg>
+Package pdftex.def Info: images/cc.jpg  used on input line 420.
+(pdftex.def)             Requested size: 88.82031pt x 96.19353pt.
+<images/uc.jpg, id=256, 919.435pt x 995.72pt>
+File: images/uc.jpg Graphic file (type jpg)
+<use images/uc.jpg>
+Package pdftex.def Info: images/uc.jpg  used on input line 420.
+(pdftex.def)             Requested size: 88.82031pt x 96.19353pt.
+<images/ic.jpg, id=257, 919.435pt x 995.72pt>
+File: images/ic.jpg Graphic file (type jpg)
+<use images/ic.jpg>
+Package pdftex.def Info: images/ic.jpg  used on input line 420.
+(pdftex.def)             Requested size: 88.82031pt x 96.19353pt.
+File: images/uc.jpg Graphic file (type jpg)
+<use images/uc.jpg>
+Package pdftex.def Info: images/uc.jpg  used on input line 420.
+(pdftex.def)             Requested size: 88.82031pt x 96.19353pt.
+File: images/ic.jpg Graphic file (type jpg)
+<use images/ic.jpg>
+Package pdftex.def Info: images/ic.jpg  used on input line 420.
+(pdftex.def)             Requested size: 88.82031pt x 96.19353pt.
+File: _figures/logo-federico-II-blue.png Graphic file (type png)
+<use _figures/logo-federico-II-blue.png>
+Package pdftex.def Info: _figures/logo-federico-II-blue.png  used on input line
+ 420.
+(pdftex.def)             Requested size: 36.93582pt x 36.92833pt.
+ ( FP-EVAL ( FP-UPN ( FP-MUL ) ( FP-DIV ) ) ) [22
+
+ <./images/rc.jpg> <./images/cc.jpg> <./images/uc.jpg> <./images/ic.jpg>]
 File: _figures/logo-federico-II-white.png Graphic file (type png)
 <use _figures/logo-federico-II-white.png>
 Package pdftex.def Info: _figures/logo-federico-II-white.png  used on input lin
-e 412.
+e 424.
 (pdftex.def)             Requested size: 298.11467pt x 298.11467pt.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <14.4> not avai
 lable
 (Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
-ut line 412.
+ut line 424.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
-(Font)              scaled to size 16.55989pt on input line 412.
+(Font)              scaled to size 16.55989pt on input line 424.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/b/n' in size <20.74> not ava
 ilable
 (Font)              Font shape `T1/AlegreyaSans-LF/bold/n' tried instead on inp
-ut line 412.
+ut line 424.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
-(Font)              scaled to size 23.85088pt on input line 412.
+(Font)              scaled to size 23.85088pt on input line 424.
  [23
 
 ]
@@ -1704,13 +1726,13 @@ LaTeX Font Info:    Font shape `T1/AlegreyaSans-LF/bold/n' will be
 
  (./slides.aux)
 Package rerunfilecheck Info: File `slides.out' has not changed.
-(rerunfilecheck)             Checksum: 4D7372E5230EA95851798370D9B7BD00;2427.
+(rerunfilecheck)             Checksum: 352159D2053DB9378900E4DF866B8A8B;2559.
  ) 
 Here is how much of TeX's memory you used:
- 30922 strings out of 480507
- 613421 string characters out of 5902005
- 977969 words of memory out of 5000000
- 47747 multiletter control sequences out of 15000+600000
+ 30950 strings out of 480507
+ 613831 string characters out of 5902005
+ 978065 words of memory out of 5000000
+ 47772 multiletter control sequences out of 15000+600000
  689205 words of font info for 89 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  128i,17n,124p,553b,1039s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1727,10 +1749,10 @@ ts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type
 c/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/
 fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb>
-Output written on slides.pdf (23 pages, 3264936 bytes).
+Output written on slides.pdf (23 pages, 3535377 bytes).
 PDF statistics:
  336 PDF objects out of 1000 (max. 8388607)
- 262 compressed objects within 3 object streams
+ 259 compressed objects within 3 object streams
  62 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

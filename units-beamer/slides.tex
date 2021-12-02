@@ -356,10 +356,10 @@
 	%Stabilizzazione di una pallina su un piano mediante l'uso di una piattaforma di Gough-Stewart.
 	
 	\begin{itemize}
+		
 		\item Modello e stampa 3D
-		\item Servomotori
-		\item Piano resistivo
-		\item Ponte ad H
+		\item Assemblaggio
+		\item Collegamento componenti elettriche
 	\end{itemize}
 	\column{0.7\textwidth}
 	\centering \includegraphics[width=\textwidth]{./images/stewart.png}
@@ -375,7 +375,7 @@
 	
 		\item Controllo semplice e intuitivo:\\ 
 		\small \texttt{setPosition(x, y, z, rol, pit, yaw);}
-		\item Controllo raggiungibilità posizione
+		\item Verifica raggiungibilità posizione
 		%\item Implementazione controllore PID: 	\\\texttt{setPosition(0,0,108,radians(tiltX),radians(tiltY),radians(0));}
 		
 		\item Filtraggio dati con media e filtro passa basso
@@ -383,9 +383,7 @@
 		\item Programmazione figure di Lissajous
 	\end{itemize}
 	\column{0.5\textwidth}
-	\centering \includegraphics[width=0.65\textwidth]{./images/filtraggio2.png}\\
-	\vspace{0.3cm}
-	\centering \includegraphics[width=0.65\textwidth]{./images/osc2.jpg}
+	\centering \includegraphics[width=\textwidth]{./images/filtraggio2.png}
 	\end{columns}
 	\end{frame}
 	
@@ -393,17 +391,31 @@
 	
 	\subsection{Dimostrazione 6 gradi di libertà}
 	\begin{frame}{Risultati}{Dimostrazione 6 gradi di libertà}
-	\centering\movie[width=12cm, height=6.75cm, poster, autostart, repeat]{}{./images/test.mp4}
+	\centering\movie[width=11.8cm, height=6.75cm, poster, autostart, repeat]{}{./images/video1.mp4}
 	\end{frame}
 	\subsection{Dimostrazione stabilizzazione}
 	\begin{frame}{Risultati}{Dimostrazione stabilizzazione}
-	\centering\movie[width=12cm, height=6.75cm, poster, autostart, repeat]{}{./images/test.mp4}
+	\centering\movie[width=11.8cm, height=6.75cm, poster, autostart, repeat]{}{./images/video2.mp4}
 
 	\end{frame}
 	
-	\subsection{Dimostrazione setpoint dinamico}
-	\begin{frame}{Risultati}{Dimostrazione setpoint dinamico}
-	\centering\movie[width=12cm, height=6.75cm, poster, autostart, repeat]{}{./images/test.mp4}
+	\subsection{Dimostrazione setpoint dinamico con figure di Lissajous}
+	\begin{frame}{Risultati}{Dimostrazione setpoint dinamico con figure di Lissajous}
+	\centering
+	\begin{tabular}{cc}
+	\hspace{0cm}
+  \includegraphics[height=0.4\textheight]{images/rc.jpg}
+  &
+  \hspace{1cm}
+  \includegraphics[height=0.4\textheight]{images/cc.jpg}
+ \end{tabular}
+
+\begin{tabulary}{\linewidth}{CC}
+  \includegraphics[height=0.4\textheight]{images/uc.jpg}
+  &
+  \hspace{1cm}
+  \includegraphics[height=0.4\textheight]{images/ic.jpg}
+ \end{tabulary}
 
 	\end{frame}
 	
