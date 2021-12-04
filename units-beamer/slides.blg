@@ -1,5 +1,5 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'slides.blg'
-[111] biber:340> INFO - === lun nov 29, 2021, 12:16:25
-[233] Utils.pm:400> ERROR - Cannot find 'slides.bcf'!
-[234] Biber.pm:132> INFO - ERRORS: 1
+[95] biber:340> INFO - === sab dic  4, 2021, 15:36:11
+[187] Utils.pm:400> ERROR - Cannot find 'slides.bcf'!
+[187] Biber.pm:132> INFO - ERRORS: 1
